@@ -1,0 +1,54 @@
+<meta charset="UTF-8">
+
+<h1>Vamos a calcular el Indice de masa corporal</h1>
+
+
+<script>
+
+// Escribe un programa que calcule el IMC ingresando eso hy altura. Recuerda que se calcula peso / altura al cuadrado
+
+
+function saltoLinea() {
+
+document.write("<br><br>")
+
+}
+
+function imprimir(frase) {
+
+document.write(frase)
+
+}
+
+function calcularImc(peso,altura) {
+
+imc = (peso /(altura * altura));
+return(imc);
+
+}
+
+var peso = 71
+var altura = 1.72
+var imc 
+
+imprimir("Pesas " + peso + " KGM");
+saltoLinea();
+
+imprimir("Mides " + altura + " metros");
+saltoLinea();
+
+imprimir("Tu indice de masa corporal es " + (peso /(altura * altura)));
+
+imprimir("<br><br><br>");
+imprimir("<h1>Y tambien el de otra persona usando una funcion </h1>");
+
+
+
+var peso2 = 80
+var altura2 = 1.85
+
+imcChristian = calcularImc(peso2,altura2);
+
+
+imprimir("El IMC de Christian es " + imcChristian);
+</script>
