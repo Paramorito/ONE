@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+<h1>Las tablas de multiplicar</h1>
+<script>
+
+//Este programa pide alimentarse con un numero a traves de un prompt y con base en este numero se calculará su multiplicacion del 1 al 10
+
+function saltoLinea() {
+document.write("<br><br>")
+}
+
+function imprimir(frase) {
+document.write(frase)
+saltoLinea()
+}
+
+var multiplicador = parseInt(prompt("Ingrese que tabla desea multiplicar"))
+var multiplo = 1
+
+imprimir("TABLA DEL " + multiplicador)
+
+	while (multiplo <= 10) {
+		imprimir(multiplo + " X " + multiplicador + " = " + (multiplo * multiplicador))
+		multiplo = multiplo + 1
+	}
+
+</script>
