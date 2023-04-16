@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<h1>Mundiales por año</h1>
+
+
+<script>
+
+// Este programa indica en que años ha abido mundial a traves de definir un año limite y calculando en un loop sumando 4 años
+
+function saltoLinea() {
+
+document.write("<br><br>")
+
+}
+
+function imprimir(frase) {
+
+document.write(frase)
+saltoLinea()
+
+}
+
+var anhoMundial = 1930;
+var anhoLimite = parseInt(prompt("ingrese año limite"))
+
+while (anhoMundial <= anhoLimite) {
+imprimir("Hubo mundial en el " + anhoMundial);
+anhoMundial = anhoMundial + 4;
+}
+
+imprimir("FINALIZA PROGRAMA")
+
+</script>
