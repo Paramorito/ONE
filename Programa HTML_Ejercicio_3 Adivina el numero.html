@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+
+<h1>Adivina el numero</h1>
+
+
+<script>
+
+//En este programa se propone un juego, ingresando con prompts numeros hasta adivinar el numero que previamente se definió en el codigo.
+
+
+function saltoLinea() {
+
+document.write("<br><br>")
+
+}
+
+function imprimir(frase) {
+
+document.write(frase)
+
+}
+
+function calcularImc(peso,altura) {
+
+imc = (peso /(altura * altura));
+return(imc);
+
+}
+
+var numPensado = 5;
+var numLanzado = parseInt(prompt("Ingrese un numero entre 0 y 10"));
+
+if (numLanzado == numPensado){
+	imprimir("Acertaste!!")
+	}
+	
+if (numLanzado != numPensado){
+	imprimir("Incorrecto, el numero era " + numPensado)
+}
+
+</script>
