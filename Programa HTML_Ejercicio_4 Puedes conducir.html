@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<h1>¿Puedes conducir?</h1>
+
+<script>
+//Este programa te indica si puedes conducir o no basandose en tu edad y si tienes o no licencia de conducir a traves de ingreso de informacion con prompts y un condicional "IF"
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var edad = parseInt(prompt("¿Cuál es tu edad?"));
+    var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
+	
+	if (edad >= 18 && tieneLicencia == "S") {
+	imprimir("Puedes conducir")
+	} else {
+	imprimir("No puedes conducir")
+	}
+
+
+</script>
