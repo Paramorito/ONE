@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+
+<h1>Adivina el numero</h1>
+
+
+<script>
+
+//En este programa se propone un juego, ingresando con prompts numeros hasta adivinar el numero que previamente se definió en el codigo.
+//Se limita el programa a 3 intentos y se añade una condicion para romper el loop
+
+function saltoLinea() {
+
+document.write("<br><br>")
+
+}
+
+function imprimir(frase) {
+
+document.write(frase)
+saltoLinea()
+
+}
+
+
+var numPensado = Math.round(Math.random() * 10);
+var intentos = 3;
+
+while ( intentos > 0) {
+
+var numLanzado = parseInt(prompt("Ingrese un numero entre 0 y 10"));
+
+	if (numLanzado == numPensado){
+		alert("Acertaste!!! El numero pensado era " + numPensado )
+		break;
+	}
+	else {
+		alert("Fallaste! intenta de nuevo")
+	}
+intentos = intentos - 1
+	
+}
+
+imprimir("Fallaste, el numero era " + numPensado);
+
+</script>
