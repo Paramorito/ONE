@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<h1>Pares del 1 al 100</h1>
+<script>
+
+//Este programa imprime todos los numeros pares del 2 al 100 a traves de un bucle.
+
+function saltoLinea() {
+document.write("<br><br>")
+}
+
+function imprimir(frase) {
+document.write(frase)
+saltoLinea()
+}
+
+var num = 2;
+
+while (num <= 100) {
+	imprimir(num);
+	num = num + 2
+}
+
+imprimir("Fin")
+
+</script>
