@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<h1>Las edades de una familia</h1>
+<script>
+
+//Este programa calculara la media de las edades de una familia a traves de un bucle while limitando los resultados a traves de un prompt que el usuario alimenta.
+
+function saltoLinea() {
+document.write("<br><br>")
+}
+
+function imprimir(frase) {
+document.write(frase)
+saltoLinea()
+}
+
+var edad = 0;
+var totalEdad = 0;
+var conteo = 0;
+
+var miembrosFam = parseInt(prompt("¿Cuantos integrantes tiene tu familia?"));
+conteo = miembrosFam;
+
+while (conteo >= 1) {
+	edad = parseInt(prompt("Ingresa la edad de este miembro de la familia"));
+	totalEdad = totalEdad + edad
+	conteo = conteo - 1
+}
+
+imprimir("La edad promedio de esta familia es: " + (totalEdad/miembrosFam))
+
+</script>
